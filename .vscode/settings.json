@@ -1,10 +1,7 @@
 {
   "workbench.colorCustomizations": {
-    "panel.border": "#f1b8f9",
     "sash.hoverBorder": "#f1b8f9",
     "statusBar.background": "#e889f5",
-    "statusBar.debuggingBackground": "#96f589",
-    "statusBar.debuggingForeground": "#15202b",
     "statusBar.foreground": "#15202b",
     "statusBarItem.hoverBackground": "#df5af1",
     "statusBarItem.remoteBackground": "#e889f5",
@@ -12,5 +9,6 @@
     "tab.activeBorder": "#f1b8f9"
   },
   "peacock.color": "#e889f5",
-  "marquee.widgets.npm-stats.packageNames": ["threads"]
+  "marquee.widgets.npm-stats.packageNames": ["threads"],
+  "cSpell.words": ["bottombar", "leftsidebar", "svix", "uploadthing"]
 }
