@@ -19,7 +19,7 @@ dependencies:
     version: 18.3.0
   '@uploadthing/react':
     specifier: ^6.0.0
-    version: 6.6.0(next@14.2.5)(react@18.3.1)(uploadthing@6.12.0)
+    version: 6.7.2(next@14.2.5)(react@18.3.1)(uploadthing@6.12.0)
   autoprefixer:
     specifier: 10.4.19
     version: 10.4.19(postcss@8.4.40)
@@ -574,22 +574,22 @@ packages:
     resolution: {integrity: sha512-kz3F0oEgAyts25NAGXlUBCWh3mXonbSOQJFGFMawHuIgbUbnzXbe4w5WI+0XdneCbjNmikfWrdWrs8m/7HATfQ==}
     dev: false
 
-  /@uploadthing/react@6.6.0(next@14.2.5)(react@18.3.1)(uploadthing@6.12.0):
-    resolution: {integrity: sha512-jLN4Oy21d0n8F6CNPl9qjEu0/Q1rnddSxny/02Lm89L/sYuR4RXfk1vBgBGPAGXBak0BO9z5eEmYURLrXXUAJQ==}
+  /@uploadthing/react@6.7.2(next@14.2.5)(react@18.3.1)(uploadthing@6.12.0):
+    resolution: {integrity: sha512-9Mdslj1S24qbISA/LE3In5OFQ/U7OxdMbBlTPkJxKPkh+UW7BqZS0XuRTfkZYPkdBGDoXw5aH7VG3D/vGgpmxg==}
     peerDependencies:
       next: '*'
       react: ^17.0.2 || ^18.0.0
-      uploadthing: 6.12.0
+      uploadthing: 6.13.2
     peerDependenciesMeta:
       next:
         optional: true
     dependencies:
       '@uploadthing/dropzone': 0.4.1(react@18.3.1)
-      '@uploadthing/shared': 6.7.5
+      '@uploadthing/shared': 6.7.8
       file-selector: 0.6.0
       next: 14.2.5(react-dom@18.3.1)(react@18.3.1)
       react: 18.3.1
-      tailwind-merge: 2.3.0
+      tailwind-merge: 2.4.0
       uploadthing: 6.12.0(next@14.2.5)(tailwindcss@3.4.4)
     transitivePeerDependencies:
       - solid-js
@@ -602,6 +602,14 @@ packages:
     dependencies:
       '@uploadthing/mime-types': 0.2.10
       effect: 3.2.6
+      std-env: 3.7.0
+    dev: false
+
+  /@uploadthing/shared@6.7.8:
+    resolution: {integrity: sha512-dLNa9GpdeiCHc/Nd0+BfaJ3wXvWIztBAaWIsNNPoaKiU3qhHoQd+5jDVx4oYKYVANqnv9s2CJW7di8Th5xy7Cw==}
+    dependencies:
+      '@uploadthing/mime-types': 0.2.10
+      effect: 3.4.5
       std-env: 3.7.0
     dev: false
 
@@ -1104,6 +1112,10 @@ packages:
     resolution: {integrity: sha512-EH1tbk+H5uMTU38uqAXVy0+2g5QqTY68C3Imo5WSWIcyjCiPS96nBh9Ms2kjKn/i14Rn1dBNoHfsR6Nfne4L3w==}
     dev: false
 
+  /effect@3.4.5:
+    resolution: {integrity: sha512-aTonOH68tUttSdYwMkiuky3hjgn3pu7yInNaE8rU2EDKQ8zr9Me78WcvWBQKe4u1gvbBH77y9dAKqn98lNIfNQ==}
+    dev: false
+
   /electron-to-chromium@1.4.787:
     resolution: {integrity: sha512-d0EFmtLPjctczO3LogReyM2pbBiiZbnsKnGF+cdZhsYzHm/A0GV7W94kqzLD8SN4O3f3iHlgLUChqghgyznvCQ==}
     dev: false
@@ -1584,7 +1596,7 @@ packages:
     resolution: {integrity: sha512-QlZ5yJC0VxHxQQsQhXvBaC7VRJ2uaxTf+Tfpu4Z/OcVQJVpZO+DGU0rkoVW5ce2SccxugvpBJoMvUs59iILYdw==}
     engines: {node: '>= 12'}
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
     dev: false
 
   /fill-range@7.0.1:
@@ -3199,10 +3211,8 @@ packages:
       '@babel/runtime': 7.23.2
     dev: false
 
-  /tailwind-merge@2.3.0:
-    resolution: {integrity: sha512-vkYrLpIP+lgR0tQCG6AP7zZXCTLc1Lnv/CCRT3BqJ9CZ3ui2++GPaGb1x/ILsINIMSYqqvrpqjUFsMNLlW99EA==}
-    dependencies:
-      '@babel/runtime': 7.24.6
+  /tailwind-merge@2.4.0:
+    resolution: {integrity: sha512-49AwoOQNKdqKPd9CViyH5wJoSKsCDjUlzL8DxuGp3P1FsGY36NJDAa18jLZcaHAUUuTj+JB8IAo8zWgBNvBF7A==}
     dev: false
 
   /tailwindcss-animate@1.0.7(tailwindcss@3.4.4):
@@ -3308,10 +3318,6 @@ packages:
 
   /tslib@2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
-    dev: false
-
-  /tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: false
 
   /tslib@2.6.3:
